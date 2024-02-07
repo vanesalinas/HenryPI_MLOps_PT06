@@ -1,6 +1,6 @@
 #importar las librerias
 from fastapi import FastAPI   
-import pandas as pd   
+import pandas as pd  
 import gzip 
 
 ''' 
@@ -17,7 +17,7 @@ def function_df(ruta):
     with gzip.open(ruta, "rb") as archivo_comprimido:
     # Cargar los datos JSON
         df = pd.read_json(archivo_comprimido, lines=True)
-    return df
+    return df 
 
 df_steam_games = function_df('./Datasets/clean_steam_games.json.gz')
 df_user_reviews = function_df('./Datasets/clean_user_reviews.json.gz')
