@@ -1,7 +1,7 @@
 #importar las librerias
-from fastapi import FastAPI  
-import pandas as pd  
-import gzip
+from fastapi import FastAPI   
+import pandas as pd   
+import gzip 
 
 ''' 
 Instanciamos la clase
