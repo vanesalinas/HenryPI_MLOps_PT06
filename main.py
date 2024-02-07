@@ -36,6 +36,10 @@ corresponde al path / con una operacion GET
 Usamos async para que la llamada al servidor sea asincrona
 De esta forma pueda ejecutar otras tareas en vez de tener que estar esperando a que se devuelva una respuesta
 '''
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
 @app.get("/A")
 async def developer( desarrollador : str ):
     '''
