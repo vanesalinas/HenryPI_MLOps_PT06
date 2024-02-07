@@ -2,3 +2,7 @@
 *.json
 Datasets/
 venv/
+/Datasets
+/venv
+Datasets
+venv
